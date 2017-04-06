@@ -6,7 +6,8 @@
 
 ### running the code
 
-- download the word vector file and place it in the same folder. It should be named `glove.6B.200d.txt`
+- download the word vector file from  [here](https://nlp.stanford.edu/projects/glove/) and place it in the same folder. It should be named `glove.6B.200d.txt`
+
 
 - python categorize.py
 
