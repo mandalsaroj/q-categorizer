@@ -20,8 +20,7 @@ for line in data:
     if line[:line.find(' ')] not in categories_sl.keys():
         categories_sl[line[:line.find(' ')]] = count
         count +=1
-print MAX_SEQUENCE_LENGTH
-print count
+
 tokenizer = Tokenizer()
 tokenizer.fit_on_texts(samples)
 sequences = tokenizer.texts_to_sequences(samples)
@@ -76,4 +75,4 @@ model.compile(loss='categorical_crossentropy', optimizer='rmsprop',metrics=['acc
 
 
 model.fit(x_train, y_train, validation_data=(x_val, y_val),
-          epochs=1, batch_size=50)
+          epochs=20, batch_size=50)
