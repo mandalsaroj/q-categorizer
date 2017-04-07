@@ -76,4 +76,4 @@ model.compile(loss='categorical_crossentropy', optimizer='rmsprop',metrics=['acc
 
 
 model.fit(x_train, y_train, validation_data=(x_val, y_val),
-          epochs=1, batch_size=50)
+          epochs=50, batch_size=50)
